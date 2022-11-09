@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,italic&display=swap);
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-style: normal;
+    font-size: 14px;
+    font-family: Montserrat;
+    color: black;
+    background: #fff;
+    padding: 10px 15px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.filter__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 0 10px 0;
+}
+
+.news {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    border: 2px solid #FF6501;
+    border-radius: 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.news__btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post strong {
+    font-size: 20px;
+}
+
+.news-enter {
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+
+.news-enter-active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 500ms;
+}
+
+.news-exit-active {
+    transform: translate(-100%, 0);
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.select__limit {
+    margin: 5px 0 0 0;
+}
+
+.news__link, .news__time, .news__author, .news__comments {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.news__title {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.news-title {
+    font-size: 15px;
+}
+
+.title-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.news-score, .news-author, .news-date {
+    font-size: 13px;
+}
+
+.comments {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 5px 0;
+    justify-content: space-between;
+}
+
+.comeback {
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1px;
+    border: 1px solid #FF6501;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment * {
+    pointer-events: none;
+}
+
+.comment .loader, .comment .no-comment {
+    display: none;
+    text-align: center;
+}
+
+.comment .no-comment hr {
+    margin: 5px 0;
+}
+
+.comment.load .loader, .comment.no .no-comment {
+    display: block;
+}
+
+.comment:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
