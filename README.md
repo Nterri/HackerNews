@@ -4,5 +4,5 @@
 <h4 align="center">1) Write the command to the console "yarn install"</h3>
 <h4 align="center">2) Write the command to the console "yarn start"</h3>
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Computer+science+student" alt="">
+  <img src="[https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Computer+science+student](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=104EF7&width=435&lines=yarn+install;yarn+start)]" alt="">
 </p>
